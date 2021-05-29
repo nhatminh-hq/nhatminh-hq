@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+        function timkiem_nangcao() {
+            var a = document.getElementById('tim_nangcao');
+            var category = document.getElementById('nangcao');
+            var test = a.innerHTML;
+            if(Text == 'tim kiem nang cao'){
+                category.style.display = "table-row";
+                a.innerHTML = "tim kiem nang cao";
+                }
+                else{
+                    category.style.display = "none";
+                    a.innerHTML = "tim kiem nang cao";
+                }
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>tim kiem du lieu</h1>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+            <td>nhap tieu de</td>
+            <td>
+                <input type="text" id="title" value=""><br>
+                <a href="#" onclick="return timkiem_nangcao()" id="tim_nangcao"></a>
+            </td>
+            </tr>
+            <tr id="nangcao">
+                <td>chon chuyen muc</td>
+                <td>
+                    <select id="category">
+                        <option value="1">php</option>
+                        <option value="2">javascript</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+            <td></td>
+            <td>
+                <input type="button" id="btn_search" value="" onclick="HTTP//www.google.com"/>
+            </td>
+            </tr>
+    </body>
+</html>
